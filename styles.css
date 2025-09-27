@@ -23,6 +23,8 @@ header {
   color: white;
   text-align: center;
   padding: 15px 0;
+  position: sticky;
+  top: 0px;
   
 }
 
@@ -38,10 +40,15 @@ header {
   line-height: 1.5;
   background-color: #f4f4f4;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  float:right;
+  padding: 10px 3%;
+  margin: 10px auto;
+  
 }
 
 .main-article {
   background-color: #e9ecef;
+  padding: 15px;
 }
 
 .page-footer {
@@ -49,4 +56,15 @@ header {
   color: white;
   text-align: center;
   padding: 10px 10%;
+}
+
+.clearfix::after {
+content: "";
+display: table;
+clear: both;
+visibility: none;
+}
+
+.article-footer {
+  padding: 10px;
 }
